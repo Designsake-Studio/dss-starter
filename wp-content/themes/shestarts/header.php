@@ -41,7 +41,7 @@
 
   <div class="js-sitewrap site-wrap"> <!-- .body has opacity 0 for fade in effect on load -->
 
-    <header id="masthead" class="site-header">
+    <header class="site-header">
 
       <div class="site-branding">
         <?php
@@ -55,11 +55,10 @@
           <p class="h4 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
           <?php
         endif;
-        $shespeaksincode_description = get_bloginfo( 'description', 'display' );
-        if ( $shespeaksincode_description || is_customize_preview() ) :
+
           ?>
-          <p class="site-description"><?php echo $shespeaksincode_description; /* WPCS: xss ok. */ ?></p>
-        <?php endif; ?>
+
+
       </div><!-- .site-branding -->
 
       <nav id="site-navigation" class="main-navigation">
@@ -73,4 +72,4 @@
       </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
 
-    <div id="content" class="site-content">
+    <main role="main">

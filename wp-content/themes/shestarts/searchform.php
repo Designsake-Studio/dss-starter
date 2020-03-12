@@ -1,6 +1,6 @@
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-    <div class="search-form-wrap">
-        <input type="text" placeholder="Search&hellip;" name="s" class="s form-control" />
-        <input type="submit" class="btn" value="Go" />
-    </div>
+<!-- search -->
+<form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
+  <input class="search-input" type="search" name="s" placeholder="<?php _e( 'To search, type and hit enter.', 'codesake' ); ?>">
+  <button class="search-submit" type="submit" role="button"><?php _e( 'Search', 'codesake' ); ?></button>
 </form>
+<!-- /search -->

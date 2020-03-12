@@ -4,50 +4,21 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package shespeaksincode
+ * @package codesake
  */
 
 get_header();
 ?>
 
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+  <section>
 
-    <?php if ( have_posts() ) : ?>
+      <h1><?php _e( 'Archives', 'codesake' ); ?></h1>
 
-      <header class="page-header">
-        <?php
-        the_archive_title( '<h1 class="page-title">', '</h1>' );
-        the_archive_description( '<div class="archive-description">', '</div>' );
-        ?>
-      </header><!-- .page-header -->
+      <?php get_template_part('partials/loop'); ?>
 
-      <?php
-      /* Start the Loop */
-      while ( have_posts() ) :
-        the_post();
+      <?php get_template_part('partials/pagination'); ?>
 
-        /*
-         * Include the Post-Type-specific template for the content.
-         * If you want to override this in a child theme, then include a file
-         * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-         */
-        get_template_part( 'partials/content', get_post_type() );
-
-      endwhile;
-
-      the_posts_navigation();
-
-    else :
-
-      get_template_part( 'partials/content', 'none' );
-
-    endif;
-    ?>
-
-    </main><!-- #main -->
-  </div><!-- #primary -->
+    </section>
 
 <?php
-get_sidebar();
 get_footer();

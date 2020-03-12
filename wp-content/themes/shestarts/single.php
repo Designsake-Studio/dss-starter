@@ -1,37 +1,59 @@
+<?php get_header(); ?>
+
+ <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+    <!-- article -->
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+      <!-- post thumbnail -->
+      <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+        </a>
+      <?php endif; ?>
+      <!-- /post thumbnail -->
+
+      <!-- post title -->
+      <h1>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+      </h1>
+      <!-- /post title -->
+
+      <!-- post details -->
+      <span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+      <span class="author"><?php _e( 'Published by', 'codesake' ); ?> <?php the_author_posts_link(); ?></span>
+      <span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'codesake' ), __( '1 Comment', 'codesake' ), __( '% Comments', 'codesake' )); ?></span>
+      <!-- /post details -->
+
+      <?php the_content(); // Dynamic Content ?>
+
+      <?php the_tags( __( 'Tags: ', 'codesake' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+
+      <p><?php _e( 'Categorised in: ', 'codesake' ); the_category(', '); // Separated by commas ?></p>
+
+      <p><?php _e( 'This post was written by ', 'codesake' ); the_author(); ?></p>
+
+      <?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+
+      <?php comments_template(); ?>
+
+    </article>
+    <!-- /article -->
+
+  <?php endwhile; ?>
+
+  <?php else: ?>
+
+    <!-- article -->
+    <article>
+
+      <h1><?php _e( 'Sorry, nothing to display.', 'codesake' ); ?></h1>
+
+    </article>
+    <!-- /article -->
+
+  <?php endif; ?>
+
+
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package shespeaksincode
- */
-
-get_header();
-?>
-
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main">
-
-    <?php
-    while ( have_posts() ) :
-      the_post();
-
-      get_template_part( 'partials/content', get_post_type() );
-
-      the_post_navigation();
-
-      // If comments are open or we have at least one comment, load up the comment template.
-      if ( comments_open() || get_comments_number() ) :
-        comments_template();
-      endif;
-
-    endwhile; // End of the loop.
-    ?>
-
-    </main><!-- #main -->
-  </div><!-- #primary -->
-
-<?php
-get_sidebar();
 get_footer();
