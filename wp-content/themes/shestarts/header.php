@@ -46,19 +46,11 @@
       <div class="site-branding">
         <?php
         the_custom_logo();
-        if ( is_front_page() && is_home() ) :
-          ?>
+        if ( is_front_page() && is_home() ) : ?>
           <h1 class="h4 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <?php
-        else :
-          ?>
+        <?php else : ?>
           <p class="h4 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-          <?php
-        endif;
-
-          ?>
-
-
+        <?php endif; ?>
       </div><!-- .site-branding -->
 
       <nav id="site-navigation" class="main-navigation">

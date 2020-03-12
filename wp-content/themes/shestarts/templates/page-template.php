@@ -1,35 +1,17 @@
 <?php
-/**
- * Template Name: Page Template
- *
- * The template for displaying the page template
- *
- * @package shespeaksincode
- */
+// Template Name: Page Template
 
 get_header();
-?>
 
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+if (have_posts()): while (have_posts()) : the_post(); ?>
 
-    <?php
-    while ( have_posts() ) :
-      the_post();
+  <h1><?php the_title(); ?></h1>
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <?php the_content(); ?>
+  <?php edit_post_link(); ?>
+  </article>
 
-      get_template_part( 'partials/content', 'page' );
-
-      // If comments are open or we have at least one comment, load up the comment template.
-      if ( comments_open() || get_comments_number() ) :
-        comments_template();
-      endif;
-
-    endwhile; // End of the loop.
-    ?>
-
-    </main><!-- #main -->
-  </div><!-- #primary -->
 
 <?php
-get_sidebar();
+endwhile; endif;
 get_footer();

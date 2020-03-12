@@ -1,4 +1,4 @@
-<!-- sidebar -->
+
 <aside class="sidebar" role="complementary">
 
   <?php get_template_part('searchform'); ?>
@@ -12,4 +12,4 @@
   </div>
 
 </aside>
-<!-- /sidebar -->
+
