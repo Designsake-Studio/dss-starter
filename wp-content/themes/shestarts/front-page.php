@@ -1,6 +1,1 @@
-<?php
-get_header();
-
-    get_template_part('partials/_sample-styles');
-
-get_footer();
+<?php get_template_part('templates/wp-front-page');
