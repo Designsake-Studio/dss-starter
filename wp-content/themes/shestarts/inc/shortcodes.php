@@ -1,29 +1,5 @@
 <?php
 
-// Line Motif
-function line_shortcode($atts, $content = null) {
-	return '<div class="line"></div><!-- /line -->';
-}
-add_shortcode ('line', 'line_shortcode');
-
-// large text
-function text_lead_shortcode( $atts, $content = null ) {
- return '<p class="lead">' . $content . '</p>';
-}
-add_shortcode( 'lead', 'text_lead_shortcode' );
-
-// sub head
-function sub_head_shortcode( $atts, $content = null ) {
- return '<h5 class="sub">' . $content . '</h5>';
-}
-add_shortcode( 'sub', 'sub_head_shortcode' );
-
-// sub head w line
-function sub_head_line_shortcode( $atts, $content = null ) {
- return '<h5 class="sub-line">' . $content . '</h5>';
-}
-add_shortcode( 'sub-line', 'sub_head_line_shortcode' );
-
 // spacer
 function spacer_shortcode( $atts, $content = null ) {
  return '<div class="spacer"></div>';

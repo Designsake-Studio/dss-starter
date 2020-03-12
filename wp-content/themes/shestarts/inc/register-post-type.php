@@ -4,7 +4,7 @@
  *
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  *
- * @package shespeaksincode
+ * @package codesake
  */
 
 add_action( 'init', 'create_post_type' );

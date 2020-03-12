@@ -4,7 +4,7 @@
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebars
  *
- * @package shespeaksincode
+ * @package codesake
  */
 
 
