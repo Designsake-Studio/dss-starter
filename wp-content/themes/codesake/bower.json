@@ -1,11 +1,11 @@
 {
-  "name": "she-speaks-in-code-common",
-  "version": "0.1",
-  "homepage": "http://shespeaksincode.com",
+  "name": "codesake-common",
+  "version": "1.0",
+  "homepage": "https://designsakestudio.com",
   "authors": [
-    "Galen Strasen <gstrasen@gmail.com>"
+    "Designsake Studio <webmaster@designsakestudio.com>"
   ],
-  "description": "She Speaks in Code Common Libraries",
+  "description": "Codesake Starter Theme Common Libraries",
   "license": "MIT",
   "private": true,
   "ignore": [
