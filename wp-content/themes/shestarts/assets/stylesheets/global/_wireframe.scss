@@ -1,0 +1,78 @@
+$wireframe: #EFEFEF;
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  .wireframe &.heading {
+    font-family: $fontFamilyAccent;
+    text-transform: uppercase;
+    font-size: rem(16);
+    @include spacing(200);
+    color: $colorSecondary;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-bottom: 2px solid $colorAccentSecondary;
+  }
+}
+
+.wireframe aside {
+  background-color: $wireframe;
+  padding: $gutter $gutter*2;
+  .heading {
+    font-size: rem(14);
+    border-bottom-color: $colorSecondary;
+  }
+  code {
+    background: $colorBg;
+  }
+}
+
+.color {
+  border: 2px solid $wireframe;
+  background: $wireframe;
+  margin-right: $gutter;
+  text-align: center;
+  .swatch {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutter;
+    &::before {
+      width: 100%;
+      text-align: center;
+      display: block;
+      color: $white;
+    }
+  }
+  &.primary .swatch {
+    background-color: $colorPrimary;
+    &::before {
+      content: '#{$colorPrimary}';
+    }
+  }
+  &.secondary .swatch {
+    background-color: $colorSecondary;
+    &::before {
+      content: '#{$colorSecondary}';
+    }
+  }
+  &.accent .swatch {
+    background-color: $colorAccent;
+    &::before {
+      content: '#{$colorAccent}';
+    }
+  }
+  &.accent-sec .swatch {
+    background-color: $colorAccentSecondary;
+    &::before {
+      content: '#{$colorAccentSecondary}';
+      color: $black;
+    }
+  }
+}

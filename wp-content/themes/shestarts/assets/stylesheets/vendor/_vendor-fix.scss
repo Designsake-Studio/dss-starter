@@ -1,0 +1,21 @@
+
+// * VENDOR OVERRIDES & REQUIRED STYLES *
+// - Animate.css
+// - Flexslider
+// - Pace
+// - Isotope
+
+
+
+
+/* ANIMATE.CSS */
+.animation {
+  visibility: hidden;
+}
+
+.animated,
+.ie .animation,
+.ie9 .animation,
+.mobile .animation {
+  visibility: visible;
+}

@@ -1,0 +1,17 @@
+.social-bar {
+  display: flex;
+  li {
+    list-style-type: none;
+    a {
+      color: $colorSecondary;
+      display: block;
+      padding: 5px 10px;
+      @include a-hover {
+        color: $colorAccent;
+      }
+    }
+    &:first-child a {
+      padding-left: 0;
+    }
+  }
+}

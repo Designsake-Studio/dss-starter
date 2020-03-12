@@ -1,0 +1,165 @@
+
+/* TYPOGRAPHY
+-------------------------------------------------*/
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  @extend %body-copy;
+}
+
+/* Headings & Paragraphs
+-------------------------------*/
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family: $fontFamilyHeading;
+  line-height: $headingLineHeight;
+  .wysiwyg * + & {
+    margin-top: 1rem;
+  }
+  .wysiwyg p + & {
+    margin-top: 3rem;
+  }
+}
+
+h1, .h1 {
+  @extend %h1;
+}
+
+h2, .h2 {
+  @extend %h2;
+}
+
+h3, .h3 {
+ @extend %h3;
+}
+
+h4, .h4 {
+  @extend %h4;
+}
+
+h5, .h5 {
+  @extend %h5;
+}
+
+h6, .h6 {
+  @extend %h6;
+}
+
+p {
+  @extend %body-copy;
+  margin-bottom: 1rem;
+}
+
+/* Lists
+-------------------------------*/
+ul, ol, li {
+  @extend %body-copy;
+}
+
+.wysiwyg ul {
+  @extend %ul;
+}
+
+.wysiwyg ol {
+  @extend %ol;
+}
+
+/* Strong & Emphasis
+-------------------------------*/
+.strong,
+b,
+strong {
+  font-weight: bold;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+/* Horizontal Rule
+-------------------------------*/
+hr {
+  border-top: 2px solid $colorBorder;
+  margin: 2rem 0;
+}
+
+/* Anchor Tags
+-------------------------------*/
+a,
+button,
+input[type=submit] {
+  @include transition(all $transition);
+}
+
+a {
+  text-decoration: none;
+  color: $colorAccent;
+  @include transition(all $transition);
+  @include a-hover {
+    text-decoration: none;
+    color: $colorPrimary;
+  }
+  .wysiwyg p > &,
+  .wysiwyg li > a,
+  .wysiwyg a:not(.btn) {
+    border-bottom: 1px solid $colorAccent;
+  }
+}
+
+a img {
+  border: 0;
+}
+
+/* Buttons
+-------------------------------*/
+.btn {
+  @extend %btn;
+}
+
+.btn-sm {
+  @extend %btn-sm;
+}
+
+.btn-lg {
+  @extend %btn-lg;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Blockquote
+-------------------------------*/
+blockquote {
+  @extend %blockquote;
+}
+
+/* Paragraph Styles
+-------------------------------*/
+.large {
+  &,
+  p {
+    @extend %body-lg;
+  }
+}
+
+.small {
+  &,
+  p {
+    @extend %body-sm;
+  }
+}
+
+
+
+
+

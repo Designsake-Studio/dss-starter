@@ -1,0 +1,49 @@
+
+
+
+.instafeed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 -5px;
+}
+
+.instafeed a {
+  background: $white;
+  display: block;
+  position: relative;
+  width: calc(25% - 10px);
+  margin: 0 5px 10px;
+}
+
+.instafeed a .ig-background {
+  height: 0;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.instafeed a .ig-background .ig-caption {
+  @include absolute($t:0,$l:0);
+  @include wh100;
+  color: $white;
+  background-color: rgba($colorAccent,0.95);
+  font-family: $fontFamilyPrimary;
+  display: flex;
+  @include opacity(0);
+  @include transition(opacity $transition);
+  .likes {
+    margin: auto;
+  }
+}
+
+.instafeed a {
+  @include a-hover {
+    .ig-background .ig-caption {
+      @include opacity(1);
+    }
+  }
+}
+

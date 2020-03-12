@@ -1,0 +1,75 @@
+/* GLOBAL
+-------------------------------------------------*/
+html, body {
+  //overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  @include font-smoothing;
+  font-size: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  background: $white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+::-moz-selection {
+  background: $colorAccent;
+  color: $black;
+}
+
+::selection {
+  background: $colorAccent;
+  color: $black;
+}
+
+:active,
+:focus  {
+  outline: none;
+}
+
+::-moz-focus-inner,
+a::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+}
+
+:focus {
+  outline: none!important;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+// .post-edit-link{
+//   text-align: center;
+//   padding: 8px 20px;
+//   text-transform: uppercase;
+//   @include fixed($b:0,$l:50%, $z:10000);
+//   margin-left: -75px;
+//   width: 150px;
+//   display: inline-block;
+//   background-color: complement($colorAccentSecondary);
+//   color: $white;
+//   font-weight: bold;
+// }
