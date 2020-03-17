@@ -15,15 +15,7 @@
 
 	<title><?php wp_title(' | ', true, 'right'); ?></title>
 
-
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory');?>/public/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory');?>/public/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory');?>/public/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="<?php bloginfo('template_directory');?>/public/images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="<?php bloginfo('template_directory');?>/public/images/favicon/safari-pinned-tab.svg" color="#e91486">
-  <meta name="msapplication-TileColor" content="#e91486">
-  <meta name="theme-color" content="#e91486">
-
+  <!-- GENERATE FAVICON : https://realfavicongenerator.net/ -->
 	<?php wp_head(); ?>
 
 </head>
