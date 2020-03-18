@@ -1,0 +1,118 @@
+
+
+.lightbox.mfp-bg {
+  @include opacity(0);
+  background-color: $white;
+  @include transition(all .15s $transition);
+}
+
+.lightbox.mfp-bg.mfp-ready {
+  @include opacity(0.9);
+}
+
+.lightbox.mfp-bg.mfp-removing {
+  @include opacity(0);
+}
+
+.lightbox.mfp-wrap .mfp-content {
+  @include opacity(0);
+  @include transition(all .15s $transition);
+}
+
+.lightbox.mfp-wrap.mfp-ready .mfp-content {
+  @include opacity(1);
+}
+
+.lightbox.mfp-wrap.mfp-removing .mfp-content {
+  @include opacity(0);
+}
+
+
+// Close Button
+.lightbox .mfp-close {
+  @include fixed($t:10px,$r:0);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/close.svg');
+  text-indent: -9999px;
+  overflow: hidden;
+  color: transparent;
+
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  @include respond-to($screen-xs) {
+    background-color: $white;
+    background-size: 20px;
+    top: 16px;
+    right: 10px;
+  }
+}
+
+// Prev & Next Arrows
+.lightbox .mfp-arrow {
+  height: 100px;
+  width: 100px;
+  background-size: auto 50px;
+  background-repeat: no-repeat;
+  &::before,
+  &::after {
+    display: none;
+  }
+  &.mfp-arrow-left {
+    left: 20px;
+    background-position: center left;
+    background-image: url('../images/arrow-prev.svg');
+    @include respond-to($screen-md) {
+      left: 10px;
+    }
+    @include respond-to($screen-xs) {
+      left: 6px;
+      @include border-radius(0 100px 100px 0);
+      background-position: center center;
+    }
+  }
+  &.mfp-arrow-right {
+    right: 20px;
+    background-position: center right;
+    background-image: url('../images/arrow-next.svg');
+    @include respond-to($screen-md) {
+      right: 10px;
+    }
+    @include respond-to($screen-xs) {
+      right: 6px;
+      @include border-radius(100px 0 0 100px);
+      background-position: center center;
+    }
+  }
+}
+
+.lightbox .mfp-figure:after {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.lightbox .mfp-bottom-bar {
+  margin-top: -60px;
+}
+
+
+.lightbox img.mfp-img {
+  padding-bottom: 75px;
+}
+
+.mfp-zoom-out-cur {
+  cursor: default;
+}
+
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+cursor: pointer;
+}
+
+.lightbox .mfp-iframe-scaler iframe {
+  box-shadow: none;
+}
+
+

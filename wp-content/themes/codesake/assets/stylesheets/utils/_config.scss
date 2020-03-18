@@ -1,0 +1,60 @@
+/* CONFIG
+-------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Barlow&display=swap);
+
+
+/* Fonts
+-------------------------------*/
+
+/* Font size */
+$baseFontSize: 16px;
+
+/* Font family */
+$fontFamilyPrimary: 'Barlow', sans-serif;
+
+/* Line height */
+$baseLineHeight: 1.5;
+
+/* Colors
+-------------------------------*/
+/* Descriptive colors */
+$white: #fff;
+$black: #000;
+$dss_blue: #474f62;
+$dss_dark: #17212b;
+$dss_gray: #88929c;
+$dss_accent: #aab7c5;
+
+/* Color usage */
+$colorPrimary: $dss_blue;
+$colorSecondary: $dss_dark;
+$colorAccent: $dss_gray;
+$colorAccentSecondary: $dss_accent;
+
+
+/* Spacing
+-------------------------------*/
+$spacer: 60px;
+$gutter: 15px;
+
+
+/* Grid config
+-------------------------------*/
+$col: 100%/12;
+$max-width: 1200px;
+
+$screen-tiny: 480px;
+$screen-xxs: 600px;
+$screen-xs: 768px;
+$screen-sm: 992px;
+$screen-md: 1200px;
+$screen-lg: 1350px;
+$screen-xl: 1500px;
+$screen-huge: 1900px;
+
+
+/* Animation
+-------------------------------*/
+$transition: .4s ease-in-out;
+
+

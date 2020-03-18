@@ -1,0 +1,14 @@
+.social-bar {
+  display: flex;
+  li {
+    list-style-type: none;
+    a {
+      color: $colorPrimary;
+      display: block;
+      padding: 5px 10px;
+    }
+    &:first-child a {
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+
+.site-wrap {
+  @include opacity(0);
+}
+
+.preloader {
+  @include fixed($t:0,$r:0,$b:0,$l:0,$z:99999);
+  @include wh100;
+  background-color: $colorPrimary;
+}
+

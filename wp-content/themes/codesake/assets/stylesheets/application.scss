@@ -1,0 +1,84 @@
+/*!
+Theme Name: Designsake Studio: Codesake WordPress Theme
+Author: Designsake Studio
+Author URI: https://designsakestudio.com
+Version: 1.0
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_variables.scss';
+@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_mixins.scss';
+//@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_component-animations.scss'; // necessary for panels, dropdowns etc
+//@import 'vendor/bootstrap-grid'; // Bootstrap 4 Grid -- https://getbootstrap.com/docs/4.4/layout/grid/
+
+
+/*--------------------------------------------------------------
+# Modern CSS
+--------------------------------------------------------------*/
+@import "global/modern-reset";
+
+
+/*--------------------------------------------------------------
+# Vendor
+--------------------------------------------------------------*/
+// Font Awesome
+$fa-font-path : "../fonts";
+@import '../vendor/font-awesome/web-fonts-with-css/scss/fontawesome';
+//@import '../vendor/font-awesome/web-fonts-with-css/scss/solid';
+@import '../vendor/font-awesome/web-fonts-with-css/scss/brands';
+
+// Animate.css
+@import 'vendor/animate';
+@import 'vendor/vendor-fix';
+
+// Magnific Popup
+// @import '../vendor/magnific-popup/src/css/main';
+
+// Slick Slider
+// @import 'vendor/slick';
+// @import 'vendor/slick-theme';
+
+
+/*--------------------------------------------------------------
+# Utils
+--------------------------------------------------------------*/
+@import "utils/functions";
+@import "utils/config";
+@import "utils/mixins";
+@import "utils/extends";
+
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+@import "global/global";
+@import "global/typography";
+@import "global/layout";
+@import "global/wireframe";
+@import "global/wordpress";
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "global-components/preloader";
+@import "global-components/social-bar";
+@import "global-components/slick-nav";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "global-layout/header";
+@import "global-layout/footer";
+@import "global-layout/forms";
+@import "global-layout/comments";
+@import "global-layout/lightbox";
+
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+@import "templates/front-page";
+
+

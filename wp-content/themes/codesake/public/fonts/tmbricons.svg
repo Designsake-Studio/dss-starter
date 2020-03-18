@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="tmbricons" horiz-adv-x="50">
+    <font-face font-family="tmbricons"
+      units-per-em="50" ascent="50"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="arrow-down"
+      unicode="&#xEA39;"
+      horiz-adv-x="50" d=" M4.5 39.5L0.2 35.2L25 10.5L25 10.5L25 10.5L49.8 35.2L45.5 39.5L25 19.1z" />
+    <glyph glyph-name="arrow-left"
+      unicode="&#xEA3A;"
+      horiz-adv-x="50" d=" M39.5 45.5L35.2 49.8L10.5 25L10.5 25L10.5 25L35.2 0.2L39.5 4.5L19.1 25z" />
+    <glyph glyph-name="arrow-right"
+      unicode="&#xEA3B;"
+      horiz-adv-x="50" d=" M10.5 4.5L14.8 0.2L39.5 25L39.5 25L39.5 25L14.8 49.8L10.5 45.5L30.9 25z" />
+    <glyph glyph-name="arrow-up"
+      unicode="&#xEA3C;"
+      horiz-adv-x="50" d=" M45.5 10.5L49.8 14.8L25 39.5L25 39.5L25 39.5L0.2 14.8L4.5 10.5L25 30.9z" />
+  </font>
+</defs>
+</svg>

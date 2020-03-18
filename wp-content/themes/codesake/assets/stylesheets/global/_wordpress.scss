@@ -1,0 +1,47 @@
+/* = WordPress Core
+   These are generated classes in WordPress core.  Many are used for the default styling options in the editor
+-------------------------------------------------------------- */
+
+// Image align classes
+.alignnone,
+.alignleft,
+.alignright,
+.aligncenter {
+  margin-top: 5px;
+  margin-bottom: 1rem;
+}
+
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+}
+
+.aligncenter,
+div.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.wp-caption {
+  max-width: 100%; /* Image does not overflow the content area */
+}
+
+.wp-caption-text {
+  padding: 10px 2px;
+  position: relative;
+}
+
