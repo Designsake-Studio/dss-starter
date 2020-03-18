@@ -31,50 +31,15 @@
 
       'assets/vendor/modernizr/modernizr.js',
       'assets/vendor/jquery/dist/jquery.js',
-
-      /** Bootstrap JS files
-       *  ------------------ */
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/affix.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/alert.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/button.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/carousel.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/modal.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/tooltip.js',
-      // 'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/popover.js',
-      'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js',
-      'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/dropdown.js',
-      'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js',
-      'assets/vendor/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/transition.js',
-
-
-      'assets/vendor/jquery.fitvids/jquery.fitvids.js',
-      'assets/vendor/video.js/dist/video-js/video.js',
-      'assets/vendor/videojs-Background/dist/videojs-Background.js',
-
-      'assets/vendor/jquery.easing/js/jquery.easing.js',
-      'assets/vendor/respond/src/respond.js',
-      'assets/vendor/responsejs/response.js',
-      'assets/vendor/jquery.cookie/jquery.cookie.js',
-      'assets/vendor/waypoints/lib/jquery.waypoints.js',
-      //'assets/vendor/waypoints/lib/shortcuts/sticky.js',
-      'assets/vendor/jquery-unveil/jquery.unveil.js',
-      'assets/vendor/slick-carousel/slick/slick.js',
-      'assets/vendor/magnific-popup/dist/jquery.magnific-popup.js',
-      'assets/vendor/instafeed.js/instafeed.js'
-
+      'assets/vendor/waypoints/lib/jquery.waypoints.js'
 
     ],
     appScripts: [
-      // You can keep your JS tidy in its own file for a specific feature.
-      // Nothing's important about the naming scheme, just as long as the file
-      // is included in this array, it'll come together.
+
         'assets/scripts/modules/*.js',
-        // 'assets/scripts/main.js'
         'assets/scripts/Control.js'
     ],
     styles: [
-      // do your @imports from this file, not the gulpfile
       'assets/stylesheets/application.scss'
     ],
     stylesWatchDir: 'assets/stylesheets/**/*.scss',
