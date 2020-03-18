@@ -121,7 +121,7 @@ function add_slug_to_body_class($classes)
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-function html5wp_pagination()
+function custom_pagination()
 {
     global $wp_query;
     $big = 999999999;
@@ -133,7 +133,7 @@ function html5wp_pagination()
     ));
 }
 
-add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action('init', 'custom_pagination'); // Add our HTML5 Pagination
 
 
 
