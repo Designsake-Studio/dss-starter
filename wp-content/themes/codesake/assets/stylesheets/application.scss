@@ -9,8 +9,8 @@ Version: 1.0
 --------------------------------------------------------------*/
 @import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_variables.scss';
 @import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_mixins.scss';
-@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_component-animations.scss'; // necessary for panels, dropdowns etc
-@import 'vendor/bootstrap-grid'; // Bootstrap 4 Grid -- https://getbootstrap.com/docs/4.4/layout/grid/
+//@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_component-animations.scss'; // necessary for panels, dropdowns etc
+//@import 'vendor/bootstrap-grid'; // Bootstrap 4 Grid -- https://getbootstrap.com/docs/4.4/layout/grid/
 
 
 /*--------------------------------------------------------------
@@ -25,7 +25,7 @@ Version: 1.0
 // Font Awesome
 $fa-font-path : "../fonts";
 @import '../vendor/font-awesome/web-fonts-with-css/scss/fontawesome';
-@import '../vendor/font-awesome/web-fonts-with-css/scss/solid';
+//@import '../vendor/font-awesome/web-fonts-with-css/scss/solid';
 @import '../vendor/font-awesome/web-fonts-with-css/scss/brands';
 
 // Animate.css
