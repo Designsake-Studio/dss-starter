@@ -108,6 +108,9 @@ _throttle = function(func, wait, options) {
         });
       }, 300);
     });
+    // $(window).on('load', function(){
+    //   Animated.init();
+    // });
 
     /* Smooth Scroll
     /––––––––––––––––––––––––*/
