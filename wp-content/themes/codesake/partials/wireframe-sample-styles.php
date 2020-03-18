@@ -1,8 +1,5 @@
 <section class="wireframe">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-12">
+  <div class="max-width">
         <h3 class="heading">Colors</h3>
 
         <div class="flex-wrap">
@@ -74,7 +71,5 @@
             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </li>
         </ul>
-      </div>
-    </div>
   </div>
 </section>
