@@ -1,59 +1,43 @@
 /*!
-Theme Name: She Starts WordPress Theme
-Author: Galen Strasen | She Speaks in Code
-Author URI: http://www.shespeaksincode.com
-Version: 0.9.0
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Bootstrap
-# Normalize
-# Vendor
-# Accessibility
-# Utils
-# Global
-# Typography
-# Layout
-# Components
---------------------------------------------------------------*/
+Theme Name: Designsake Studio: Codesake WordPress Theme
+Author: Designsake Studio
+Author URI: https://designsakestudio.com
+Version: 1.0
 
 /*--------------------------------------------------------------
 # Bootstrap
 --------------------------------------------------------------*/
-
-@import "../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_variables.scss";
-@import "../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_mixins.scss";
-@import "../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_grid.scss";
-@import "../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_component-animations.scss";
-//@import "../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_dropdowns.scss";
-@import "../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_panels.scss";
+@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_variables.scss';
+@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../vendor/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap/_component-animations.scss'; // necessary for panels, dropdowns etc
+@import 'vendor/bootstrap-grid'; // Bootstrap 4 Grid -- https://getbootstrap.com/docs/4.4/layout/grid/
 
 
 /*--------------------------------------------------------------
-# Normalize
+# Modern CSS
 --------------------------------------------------------------*/
-@import "global/normalize";
+@import "global/modern-reset";
 
 
 /*--------------------------------------------------------------
 # Vendor
 --------------------------------------------------------------*/
+// Font Awesome
 $fa-font-path : "../fonts";
 @import '../vendor/font-awesome/web-fonts-with-css/scss/fontawesome';
 @import '../vendor/font-awesome/web-fonts-with-css/scss/solid';
 @import '../vendor/font-awesome/web-fonts-with-css/scss/brands';
 
-@import '../vendor/magnific-popup/src/css/main';
+// Animate.css
+@import 'vendor/animate';
+@import 'vendor/vendor-fix';
 
-@import 'vendor/slick';
-@import 'vendor/slick-theme';
+// Magnific Popup
+// @import '../vendor/magnific-popup/src/css/main';
 
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "global/accessibility";
+// Slick Slider
+// @import 'vendor/slick';
+// @import 'vendor/slick-theme';
 
 
 /*--------------------------------------------------------------
@@ -69,12 +53,6 @@ $fa-font-path : "../fonts";
 # Global
 --------------------------------------------------------------*/
 @import "global/global";
-
-
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-// @import 'tmbricons.scss'; // This is built by the iconfont gulp task
 @import "global/typography";
 @import "global/layout";
 @import "global/wireframe";
@@ -86,7 +64,7 @@ $fa-font-path : "../fonts";
 --------------------------------------------------------------*/
 @import "global-components/preloader";
 @import "global-components/social-bar";
-
+@import "global-components/slick-nav";
 
 /*--------------------------------------------------------------
 # Layout
@@ -95,19 +73,12 @@ $fa-font-path : "../fonts";
 @import "global-layout/footer";
 @import "global-layout/forms";
 @import "global-layout/comments";
-@import "global-layout/instagram";
 @import "global-layout/lightbox";
 
 
 /*--------------------------------------------------------------
-# Panels
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
-// @import "templates/page";
-// @import "templates/front-page";
-// @import "templates/single";
-// @import "templates/index";
+@import "templates/front-page";
+
 

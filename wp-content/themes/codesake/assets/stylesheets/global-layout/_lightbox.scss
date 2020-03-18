@@ -9,6 +9,7 @@
 .lightbox.mfp-bg.mfp-ready {
   @include opacity(0.9);
 }
+
 .lightbox.mfp-bg.mfp-removing {
   @include opacity(0);
 }
@@ -88,7 +89,6 @@
   }
 }
 
-
 .lightbox .mfp-figure:after {
   box-shadow: none;
   background-color: transparent;
@@ -102,7 +102,6 @@
 .lightbox img.mfp-img {
   padding-bottom: 75px;
 }
-
 
 .mfp-zoom-out-cur {
   cursor: default;

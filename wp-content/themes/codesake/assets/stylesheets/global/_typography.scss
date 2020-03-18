@@ -87,8 +87,10 @@ em {
 /* Horizontal Rule
 -------------------------------*/
 hr {
-  border-top: 2px solid $colorPrimary;
+  height: 1px;
+  background-color: lighten($colorPrimary, 60%);
   margin: 2rem 0;
+  border: none;
 }
 
 /* Anchor Tags
