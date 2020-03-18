@@ -2,19 +2,19 @@
   <div class="max-width">
     <h3 class="heading">Colors</h3>
     <div class="flex-wrap">
-    <div class="color primary">
+    <div class="color primary animation" data-animation="fadeInDown">
       <div class="swatch"></div>
       <p>Primary</p>
     </div>
-    <div class="color secondary">
+    <div class="color secondary animation" data-animation="fadeInDown" data-delay="100">
       <div class="swatch"></div>
       <p>Secondary</p>
     </div>
-    <div class="color accent">
+    <div class="color accent animation" data-animation="fadeInDown" data-delay="200">
       <div class="swatch"></div>
       <p>Accent</p>
     </div>
-    <div class="color accent-sec">
+    <div class="color accent-sec animation" data-animation="fadeInDown" data-delay="300">
       <div class="swatch"></div>
       <p>Accent Secondary</p>
     </div>
