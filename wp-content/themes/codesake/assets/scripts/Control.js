@@ -27,6 +27,9 @@
         });
       }, 300);
     });
+    // $(window).on('load', function(){
+    //   Animated.init();
+    // });
 
     /* Smooth Scroll
     /––––––––––––––––––––––––*/
