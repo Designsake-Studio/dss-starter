@@ -3,12 +3,9 @@
   li {
     list-style-type: none;
     a {
-      color: $colorSecondary;
+      color: $colorPrimary;
       display: block;
       padding: 5px 10px;
-      @include a-hover {
-        color: $colorAccent;
-      }
     }
     &:first-child a {
       padding-left: 0;

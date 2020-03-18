@@ -14,8 +14,8 @@
 /* Typography
 -------------------------------*/
 %body-copy {
-  font-family: $fontFamilyCopy;
-  color: $colorText;
+  font-family: $fontFamilyPrimary;
+  color: $colorPrimary;
   line-height: $baseLineHeight;
 }
 
@@ -53,8 +53,6 @@
 
 %nav-text {
   text-transform: uppercase;
-  font-family: $fontFamilyPrimary;
-  @include spacing(200);
   font-size: rem(12);
   font-weight: bold;
 }
@@ -70,22 +68,17 @@
   &,
   p {
     @extend %body-lg;
-    font-family: $fontFamilySecondary;
     font-style: italic;
-    color: $colorSecondary;
-
   }
   &::before {
     content: '“';
     @include absolute($l:0, $t:0);
-    color: rgba($colorSecondary,0.15);
     font-size: rem(200);
     line-height: .75;
     font-style: normal;
   }
   footer {
     @extend %body-sm;
-    font-family: $fontFamilyPrimary;
     font-style: normal;
   }
 }
@@ -128,11 +121,9 @@
 -------------------------------*/
 %input {
   @extend %nav-text;
-  @include placeholder {
-    color: $colorAccent;
-  }
+  @include placeholder {}
   &:focus {
-    border: 2px solid $colorAccent;
+    border: 2px solid $colorPrimary;
   }
 }
 
@@ -142,12 +133,11 @@
   @extend %nav-text;
   display: inline-block;
   padding: 12px 30px;
-  background: $colorAccent;
-  border: 2px solid $colorAccent;
+  background: $colorPrimary;
+  border: 2px solid $colorPrimary;
   color: $white;
   @include a-hover {
-    background-color: $colorBg;
-    color: $colorAccent;
+    background-color: darken($colorPrimary, 20%);
   }
 }
 

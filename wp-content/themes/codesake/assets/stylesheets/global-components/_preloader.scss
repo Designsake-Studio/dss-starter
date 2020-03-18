@@ -3,39 +3,9 @@
   @include opacity(0);
 }
 
-@keyframes she_change {
-  0% {
-    background: $she_pink;
-  }
-  20% {
-    background: $she_orange;
-  }
-  40% {
-    background: $she_yellow;
-  }
-  60% {
-    background: $she_neon;
-  }
-  80% {
-    background: $she_yellow;
-  }
-  100% {
-    background: $she_pink;
-  }
-}
-
 .preloader {
   @include fixed($t:0,$r:0,$b:0,$l:0,$z:99999);
   @include wh100;
-  background-color: $white;
-  .spinner {
-    width: 100px;
-    height: 100px;
-    background-color: $she_neon;
-    @include border-radius(50%);
-    @include absolute($t:50%, $l:50%);
-    @include transform(translate(-50%,-50%));
-    @include animation(animation, she_change 3s linear infinite alternate both);
-  }
+  background-color: $colorPrimary;
 }
 

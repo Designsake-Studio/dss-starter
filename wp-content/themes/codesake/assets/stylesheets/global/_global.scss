@@ -1,7 +1,6 @@
 /* GLOBAL
 -------------------------------------------------*/
 html, body {
-  //overflow-x: hidden;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -33,13 +32,13 @@ img {
 }
 
 ::-moz-selection {
-  background: $colorAccent;
-  color: $black;
+  background: $colorPrimary;
+  color: $white;
 }
 
 ::selection {
-  background: $colorAccent;
-  color: $black;
+  background: $colorPrimary;
+  color: $white;
 }
 
 :active,
@@ -61,15 +60,15 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-// .post-edit-link{
-//   text-align: center;
-//   padding: 8px 20px;
-//   text-transform: uppercase;
-//   @include fixed($b:0,$l:50%, $z:10000);
-//   margin-left: -75px;
-//   width: 150px;
-//   display: inline-block;
-//   background-color: complement($colorAccentSecondary);
-//   color: $white;
-//   font-weight: bold;
-// }
+.post-edit-link{
+  text-align: center;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  @include fixed($b:0,$l:50%, $z:10000);
+  margin-left: -75px;
+  width: 150px;
+  display: inline-block;
+  background-color: complement($colorPrimary);
+  color: $white;
+  font-weight: bold;
+}

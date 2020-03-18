@@ -34,7 +34,7 @@
     </aside>
 
     <hr/>
-@todo add image alignment
+<p>@todo add image alignment</p>
     <h3 class="heading">Body Copy</h3>
     <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet nulla venenatis, gravida magna eget, ultrices purus.</p>
     <p><strong>Aliquam non viverra sem, at vehicula velit.</strong> Mauris scelerisque eros at metus condimentum aliquet. Sed imperdiet lectus sed quam hendrerit, egestas volutpat turpis venenatis. Pellentesque ac <a href="#">justo nunc.</a> Sed sit amet eros vehicula, pharetra magna nec, dapibus mauris. <em>Etiam in vehicula neque.</em> Praesent condimentum, diam non cursus gravida, libero massa vehicula velit, sed ullamcorper velit nunc vel leo. Phasellus lorem lectus, consectetur a arcu sit amet, congue iaculis mauris. Suspendisse elementum viverra malesuada.</p>
