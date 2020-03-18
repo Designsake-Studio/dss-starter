@@ -60,6 +60,16 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+// Text meant only for screen readers
+.screen-reader {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+
+// WP Post Edit Link
 .post-edit-link{
   text-align: center;
   padding: 8px 20px;
